@@ -1,0 +1,22 @@
+.card {
+    border: 1px solid white; 
+    border-radius: 20px;
+    color: white;
+    height: 300px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.card:hover {
+    background-color: white;
+    color: #0093E9;
+}
+
+.card:hover h3 {
+    text-decoration: underline;
+}
+
+h3, p {
+    margin: 20px auto;
+    width: 80%;
+}
