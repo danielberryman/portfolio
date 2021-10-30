@@ -1,0 +1,67 @@
+@use '../colors' as c;
+
+.outer {
+    background: c.$outer-blue-bg;
+    border: none;
+    border-radius: 50%;
+    /* border-top: 30px solid green; */
+    filter: drop-shadow(0 10px 20px rgb(160, 160, 160));
+    height: 220px;
+    width: 220px;
+    /* filter: drop-shadow(0 20px 15px rgb(184, 184, 184)); */
+    /* box-shadow: 0px 2px 4px rgba(0,0,0,.4),
+        inset 8px 8px 10px rgba(255,255,255,.4); */
+
+    /* Positioning */
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    margin-top: -110px;
+    margin-left: -110px;
+}
+
+.inner {
+    background: c.$inner-blue-bg;
+    border: none;
+    border-radius: 50%;
+    height: 160px;
+    width: 160px;
+    filter: drop-shadow(0 2px 5px black);
+
+    /* Positioning */
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    margin-top: -80px;
+    margin-left: -80px;
+}
+
+.inner-press {
+    background: c.$inner-blue-bg-press;
+    filter: drop-shadow(0 2px 6px black);
+}
+
+.dip {
+    background: c.$dip-blue-bg;
+    /* background: #9c9c9c; */
+    border: none;
+    /* border-top: 1px solid #bebebe; */
+    border-radius: 50%;
+    /* border-top: 30px solid green; */
+    height: 130px;
+    width: 130px;
+    /* filter: drop-shadow(0 20px 15px rgb(184, 184, 184)); */
+    /* box-shadow: 0px 2px 4px rgba(0,0,0,.4),
+        inset 8px 8px 10px rgba(255,255,255,.4); */
+
+    /* Positioning */
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    margin-top: -65px;
+    margin-left: -65px;
+}
+
+.dip-press {
+    background: c.$dip-blue-bg-press;
+}

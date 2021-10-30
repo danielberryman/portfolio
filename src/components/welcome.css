@@ -1,0 +1,21 @@
+.container {
+    /* display: flex;
+    justify-content: center; */
+    /* height: 200px; */
+    /* position: relative; */
+}
+.content {
+    margin: 0 auto;
+    /* position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); */
+}
+/* p {
+    margin: 0 auto;
+    width: 100%;
+} */
+
+div {
+    cursor: url(https://images.unsplash.com/photo-1470509037663-253afd7f0f51?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80), auto;
+}

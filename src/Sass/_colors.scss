@@ -1,0 +1,22 @@
+// Pin Ball Button Colors
+
+// Grey
+$outer-grey-bg: radial-gradient(rgb(148, 148, 148) 40%, #e4e4e4 59%, rgb(145, 145, 145) 100%);
+$inner-grey-bg: radial-gradient(#f0f0f0 60%, rgb(65, 65, 65) 100%);
+$inner-grey-bg-press: radial-gradient(#f0f0f0 60%, rgb(0, 0, 0) 80%);
+$dip-grey-bg: radial-gradient(#bebebe 0%, #dadada 50%, white 85%);
+$dip-grey-bg-press: radial-gradient(#cacaca 0%, #d3d3d3 50%, white 85%);
+
+// Red
+$outer-red-bg: radial-gradient(rgb(148, 0, 0) 40%, #e60000 59%, rgb(145, 0, 0) 100%);
+$inner-red-bg: radial-gradient(#ee0a0a 60%, rgb(70, 0, 0) 100%);
+$inner-red-bg-press: radial-gradient(#f10000 60%, rgb(0, 0, 0) 80%);
+$dip-red-bg: radial-gradient(#c00000 0%, #e00000 50%, rgb(255, 0, 0) 85%);
+$dip-red-bg-press: radial-gradient(#c90000 0%, #ce0000 50%, rgb(255, 0, 0) 85%);
+
+// Blue
+$outer-blue-bg: radial-gradient(rgb(0, 118, 148) 40%, #0092e6 59%, rgb(0, 116, 145) 100%);
+$inner-blue-bg: radial-gradient(#0aa6ee 60%, rgb(0, 42, 70) 100%);
+$inner-blue-bg-press: radial-gradient(#0099f1 60%, rgb(0, 0, 0) 80%);
+$dip-blue-bg: radial-gradient(#008ac0 0%, #008ee0 50%, rgb(0, 183, 255) 85%);
+$dip-blue-bg-press: radial-gradient(#007fc9 0%, #0071ce 50%, rgb(0, 162, 255) 85%);

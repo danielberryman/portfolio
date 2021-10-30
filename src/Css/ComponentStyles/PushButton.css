@@ -1,0 +1,62 @@
+.outer {
+  background: radial-gradient(#007694 40%, #0092e6 59%, #007491 100%);
+  border: none;
+  border-radius: 50%;
+  /* border-top: 30px solid green; */
+  filter: drop-shadow(0 10px 20px #a0a0a0);
+  height: 220px;
+  width: 220px;
+  /* filter: drop-shadow(0 20px 15px rgb(184, 184, 184)); */
+  /* box-shadow: 0px 2px 4px rgba(0,0,0,.4),
+      inset 8px 8px 10px rgba(255,255,255,.4); */
+  /* Positioning */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -110px;
+  margin-left: -110px;
+}
+
+.inner {
+  background: radial-gradient(#0aa6ee 60%, #002a46 100%);
+  border: none;
+  border-radius: 50%;
+  height: 160px;
+  width: 160px;
+  filter: drop-shadow(0 2px 5px black);
+  /* Positioning */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -80px;
+  margin-left: -80px;
+}
+
+.inner-press {
+  background: radial-gradient(#0099f1 60%, black 80%);
+  filter: drop-shadow(0 2px 6px black);
+}
+
+.dip {
+  background: radial-gradient(#008ac0 0%, #008ee0 50%, #00b7ff 85%);
+  /* background: #9c9c9c; */
+  border: none;
+  /* border-top: 1px solid #bebebe; */
+  border-radius: 50%;
+  /* border-top: 30px solid green; */
+  height: 130px;
+  width: 130px;
+  /* filter: drop-shadow(0 20px 15px rgb(184, 184, 184)); */
+  /* box-shadow: 0px 2px 4px rgba(0,0,0,.4),
+      inset 8px 8px 10px rgba(255,255,255,.4); */
+  /* Positioning */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -65px;
+  margin-left: -65px;
+}
+
+.dip-press {
+  background: radial-gradient(#007fc9 0%, #0071ce 50%, #00a2ff 85%);
+}
