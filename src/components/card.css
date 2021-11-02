@@ -9,7 +9,7 @@
 
 .card:hover {
     background-color: white;
-    color: #0093E9;
+    color: black;
 }
 
 .card:hover h3 {

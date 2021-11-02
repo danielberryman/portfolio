@@ -1,0 +1,23 @@
+.line {
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  top: 50%;
+  left: 50%;
+  margin-top: -250px;
+  margin-left: -250px;
+}
+
+.line path {
+  stroke: black;
+  stroke-width: 2px;
+  stroke-dasharray: 3000;
+  stroke-dashoffset: 3000;
+  animation: animate 2s linear 1;
+}
+
+@keyframes animate {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

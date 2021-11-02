@@ -1,4 +1,5 @@
 import Card from './card';
+import '../Css/ComponentStyles/Projects.css';
 
 function Projects() {
     const cards = [
@@ -36,14 +37,17 @@ function Projects() {
         }
     ];
     
-  return <div className="container">
-    {cards.map((v) => {
-      return (
-        <div className="col">
-          <Card title={v.title} desc={v.description} />
-        </div>
-      )
-    })}</div>;
+  return (
+    <div className="container">
+        {cards.map((v) => {
+        return (
+            <div className="col">
+            <Card title={v.title} desc={v.description} />
+            </div>
+        )
+        })}
+    </div>
+  )
 }
 
 export default Projects

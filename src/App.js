@@ -1,6 +1,7 @@
 import './App.scss';
-import Welcome from './components/welcome';
+import Welcome from './components/Welcome';
 import Projects from './components/projects';
+import SvgLine from './components/SvgLine';
 import {
   BrowserRouter as Router,
   Switch,
@@ -17,6 +18,9 @@ function App() {
           <Switch>
             <Route path="/projects">
               <Projects />
+            </Route>
+            <Route path="/svg">
+              <SvgLine />
             </Route>
             <Route path="/">
               <Welcome style={{ cursor: 'url(' + CustomCursor + ', auto)' }} />
