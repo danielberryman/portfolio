@@ -1,4 +1,4 @@
-import Card from './card';
+import Card from './Card';
 import '../Css/ComponentStyles/Projects.css';
 
 function Projects() {
@@ -38,13 +38,11 @@ function Projects() {
     ];
     
   return (
-    <div className="container">
+    <div className="projects-container">
         {cards.map((v) => {
-        return (
-            <div className="col">
-            <Card title={v.title} desc={v.description} />
-            </div>
-        )
+            return (
+                <Card title={v.title} desc={v.description} styling={'full'} />
+            )
         })}
     </div>
   )

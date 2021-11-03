@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  color: rgb(75, 75, 75);
+  
 }
 
 .App-logo {
@@ -43,22 +45,22 @@
   flex-wrap: wrap;
 }
 
-.col { width: 100%; }
+// .col { width: 100%; }
 
-@media screen and (max-width: 285px) { }
+// @media screen and (max-width: 285px) { }
 
-@media screen and (max-width: 330px) { }
+// @media screen and (max-width: 330px) { }
 
-@media screen and (min-width: 445px) { }
+// @media screen and (min-width: 445px) { }
 
-@media screen and (min-width: 600px) { .col { width: 50%; } }
+// @media screen and (min-width: 600px) { .col { width: 50%; } }
 
-@media screen and (min-width: 720px) { }
+// @media screen and (min-width: 720px) { }
 
-@media screen and (min-width: 900px) { .col { width: 33.33%; } }
+// @media screen and (min-width: 900px) { .col { width: 33.33%; } }
 
-@media screen and (min-width: 1024px) { .col { width: 25%; } }
+// @media screen and (min-width: 1024px) { .col { width: 25%; } }
 
-@media screen and (min-width: 1300px) { .col { width: 20%; } }
+// @media screen and (min-width: 1300px) { .col { width: 20%; } }
 
-@media screen and (min-width: 1550px) { .col { width: 16.66%; } }
+// @media screen and (min-width: 1550px) { .col { width: 16.66%; } }

@@ -1,9 +1,9 @@
 import '../App.scss';
-import './card.css';
+import '../Css/ComponentStyles/Card.css';
 
 function Card(props) {
     return (
-        <div className="card">
+        <div className={`card ${props.styling}`}>
             <h3>{props.title}</h3>
             <p>{props.desc}</p>
         </div>
