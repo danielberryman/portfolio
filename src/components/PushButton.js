@@ -24,4 +24,4 @@ function btnLift() {
     document.getElementById('dip').classList.remove('dip-press');
 }
 
-export default PushButton
+export default PushButton;

@@ -29,7 +29,7 @@ function Welcome(props) {
         el.appendChild(style);
         el.classList.add('fadeout');
         setTimeout(() => {
-            history.push('/projects');
+            history.push('/work');
         },1000);
     }
 

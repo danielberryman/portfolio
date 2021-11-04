@@ -1,14 +1,40 @@
 nav {
-  background: #6eb082;
-  background: linear-gradient(90deg, #6eb082 0%, #1c1c1c 0%, #4a4a4a 100%, #0476c1 100%, #00d4ff 100%);
   height: 64px;
 }
 
 .navLogo {
   border-radius: 50%;
-  filter: drop-shadow(0 3px 5px #2b2b2b);
+  filter: drop-shadow(0 2px 3px #252525);
   margin: 7px 0 7px 5%;
   width: 50px;
+}
+
+nav i {
+  transform: rotate(90deg);
+  color: white;
+  font-size: 32px;
+}
+
+.navBarIcon {
+  position: absolute;
+  height: 32px;
+  width: 28px;
+  top: 16px;
+  right: 5%;
+  opacity: 0;
+}
+
+#upIcon {
+  transform: rotate(0deg);
+}
+
+#downIcon {
+  transform: rotate(0deg);
+  display: none;
+}
+
+.turnDown {
+  transform: rotate(-90deg);
 }
 
 .navLinks, .navLinks li {
@@ -16,13 +42,63 @@ nav {
 }
 
 .navLinks {
-  margin: 23px 5% 23px 0;
+  margin: 14.5px 5% 14.5px 0;
   float: right;
 }
 
 .navLinks li {
+  margin-left: 50px;
+}
+
+.navLink {
+  background-color: #4a4a4a;
+  border: none;
   color: white;
+  font-family: Courier New;
   font-size: 18px;
   font-weight: bold;
-  margin-left: 50px;
+  padding: 5px 30px;
+}
+
+.navLink:hover {
+  background-color: white;
+  color: #4a4a4a;
+}
+
+.navLinkactive {
+  border-bottom: 1px solid white;
+}
+
+.nav-day {
+  background: #4a4a4a;
+}
+
+@media screen and (max-width: 1100px) {
+  .navBarIcon {
+    opacity: 1;
+  }
+
+  .navLinks, .navLinks li {
+    display: block;
+  }
+
+  .navLinks {
+    margin: 0;
+    margin-top: 64px;
+  }
+
+  .navLinks li {
+    margin-left: 0;
+  }
+
+  .navLink {
+    background-color: black;
+    border: none;
+    color: white;
+    font-family: Courier New;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 30px;
+    width: 280px;
+  }
 }

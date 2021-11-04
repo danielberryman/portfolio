@@ -1,21 +1,115 @@
-.card {
-  border: 1px solid white;
-  color: white;
+.cardContainer {
+  position: relative;
+  height: 200px;
   margin: 20px auto;
   margin-bottom: 0;
   width: 90%;
 }
 
+.card {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  color: #4a4a4a;
+}
+
 .card:hover {
-  background-color: white;
-  color: black;
+  opacity: 0;
 }
 
-.card:hover h3 {
-  text-decoration: underline;
+.cardOverlay {
+  opacity: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
 }
 
-h3, p {
+.cardOverlay:hover {
+  background-color: rgba(74, 74, 74, 0.9);
+  opacity: 1;
+}
+
+.cardContainer h2 {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 140px;
   margin: 20px auto;
   width: 80%;
+}
+
+.cardOverlayContent {
+  color: white;
+  margin: 20px 5%;
+}
+
+.cardOverlayTitle {
+  font-size: 32px;
+  margin-bottom: 0;
+}
+
+.cardOverlayTagline {
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.cardOverlayDesc {
+  font-size: 16px;
+  margin-top: 0;
+}
+
+.cardOverlayTech {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.jsDatesBg {
+  background: #3CA55C;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #B5AC49, #3CA55C);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #B5AC49, #3CA55C);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.beltbookBg {
+  background: #DA22FF;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #9733EE, #DA22FF);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #9733EE, #DA22FF);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@media screen and (max-width: 600px) {
+  .cardContainer h2 {
+    font-size: 32px;
+    margin-top: 81.5px;
+  }
+
+  .cardOverlayContent {
+    margin: 10px 5%;
+  }
+
+  .cardOverlayTitle {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+
+  .cardOverlayTagline {
+    font-size: 16px;
+    margin-top: 0;
+  }
+
+  .cardOverlayDesc {
+    font-size: 14px;
+    margin-top: 0;
+  }
+
+  .cardOverlayTech {
+    font-size: 14px;
+    margin-top: 0;
+  }
 }
