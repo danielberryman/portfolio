@@ -4,7 +4,7 @@ import Projects from './components/Projects';
 import SvgLine from './components/SvgLine';
 import Nav from './components/Nav';
 import PageTitle from './components/PageTitle';
-import Skills from './components/Skills';
+// import Skills from './components/Skills';
 import {
   BrowserRouter as Router,
   Switch,
@@ -46,12 +46,12 @@ function App() {
             <Route path="/about">
               <Nav timeOfDay={time} active={2} />
               <PageTitle title='About Me'/>
-              <SvgLine />
+              {/* <SvgLine /> */}
             </Route>
             <Route path="/together">
               <Nav timeOfDay={time} active={3} />
               <PageTitle title="Let's Make Something!"/>
-              <SvgLine />
+              {/* <SvgLine /> */}
             </Route>
             <Route path="/">
               <Welcome timeOfDay={time} />

@@ -15,19 +15,23 @@ function Nav(props) {
 
     function goHome() {
         history.push('/');
+        toggleNavBar();
     }
     function goWork() {
         history.push('/work');
+        toggleNavBar();
     }
     function goAbout() {
         history.push('/about');
+        toggleNavBar();
     }
     function goMake() {
         history.push('/together');
+        toggleNavBar();
     }
 
     function initNavBar() {
-        if (window.innerWidth <= 1100) {
+        if (window.innerWidth <= 900) {
             document.getElementById("navLinks").classList.add("hidden");
         }
     }
@@ -53,7 +57,7 @@ function Nav(props) {
         let navLinks = document.getElementById("navLinks");
         let upIcon = document.getElementById('upIcon');
         let downIcon = document.getElementById('downIcon');
-        if (window.innerWidth > 1100) {
+        if (window.innerWidth > 900 && navBarIcon) {
             navBarIcon.style.display = 'none';
             if (navLinks.classList.contains("hidden")) {
                 navLinks.classList.remove("hidden");
@@ -61,7 +65,7 @@ function Nav(props) {
             upIcon.style.display = 'block';
             downIcon.style.display = 'none';
         } else {
-            if (downIcon.style.display === 'none' && !navLinks.classList.contains("hidden")) {
+            if ((downIcon && navLinks) && downIcon.style.display === 'none' && !navLinks.classList.contains("hidden")) {
                 // We just came from a full view of the navbar
                 navBarIcon.style.display = 'inline';
                 upIcon.style.display = 'block';
@@ -79,9 +83,9 @@ function Nav(props) {
                 <i id="downIcon" className="fas fa-angle-down"></i>
             </div>
             <ul id="navLinks" className="navLinks">
-                <li><button className={props.active === 1 ? 'navLink navLinkactive': 'navLink'} onClick={goWork}>What I've Done</button></li>
-                <li><button className={props.active === 2 ? 'navLink navLinkactive': 'navLink'} onClick={goAbout}>What I'm About</button></li>
-                <li><button className={props.active === 3 ? 'navLink navLinkactive': 'navLink'} onClick={goMake}>Let's Make Something</button></li>
+                <li><button className={props.active === 1 ? 'navLink navLinkactive': 'navLink'} onClick={goWork}>My Work</button></li>
+                <li><button className={props.active === 2 ? 'navLink navLinkactive': 'navLink'} onClick={goAbout}>About Me</button></li>
+                <li><button className={props.active === 3 ? 'navLink navLinkactive': 'navLink'} onClick={goMake}>Get Started</button></li>
             </ul>
         </nav>
     )

@@ -2,7 +2,7 @@
 
 .cardContainer {
     position: relative;
-    height: 200px;
+    height: 250px;
     margin: 20px auto;
     margin-bottom: 0;
     width: 90%;
@@ -36,8 +36,8 @@
     color: white;
     text-align: center;
     text-transform: uppercase;
-    font-size: 140px;
-    margin: 20px auto;
+    font-size: 130px;
+    margin: 51.5px auto;
     width: 80%;
 }
 
@@ -79,19 +79,10 @@
     background: linear-gradient(to right, #9733EE, #DA22FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-@media screen and (max-width: 285px) { }
-
-@media screen and (max-width: 330px) { }
-
-
-@media screen and (min-width: 445px) { 
-    
-}
-
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 285px) {
     .cardContainer h2 {
-        font-size: 32px;
-        margin-top: 81.5px;
+        font-size: 72px;
+        margin-top: 84px;
     }
     .cardOverlayContent {
         margin: 10px 5%;
@@ -114,8 +105,31 @@
     }
 }
 
-
-@media screen and (min-width: 720px) { }
+@media screen and (min-width: 600px) {
+    .cardContainer h2 {
+        font-size: 90px;
+        margin-top: 74px;
+    }
+    .cardOverlayContent {
+        margin: 10px 5%;
+    }
+    .cardOverlayTitle {
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+    .cardOverlayTagline {
+        font-size: 16px;
+        margin-top: 0;
+    }
+    .cardOverlayDesc {
+        font-size: 14px;
+        margin-top: 0;
+    }
+    .cardOverlayTech {
+        font-size: 14px;
+        margin-top: 0;
+    }
+}
 
 @media screen and (min-width: 900px) { }
 

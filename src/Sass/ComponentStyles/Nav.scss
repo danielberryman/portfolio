@@ -28,7 +28,7 @@ nav i {
 
 #upIcon {
     transform: rotate(0deg);
-    // display: none;
+    
 }
 #downIcon {
     transform: rotate(0deg);
@@ -54,7 +54,7 @@ nav i {
 
 .navLink {
     background-color: c.$grey-bg;
-    border: none;
+    border: 1px solid c.$grey-bg;
     color: white;
     font-family: Courier New;
     font-size: 18px;
@@ -63,8 +63,10 @@ nav i {
 }
 
 .navLink:hover {
-    background-color: white;
-    color: c.$grey-bg;
+    background: #ec008c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #fc6767, #ec008c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #fc6767, #ec008c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: 1px solid white;
 }
 
 .navLinkactive {
@@ -80,40 +82,7 @@ nav i {
 
 }
 
-// #nav-icon-container {
-//     display: inline;
-// }
-  
-//   #hamburger {
-//     display: block;
-//     margin: 22px 20px 0 0;
-//     position: fixed;
-//     top: 0;
-//     right: 0;
-//   }
-  
-//   #ex-hamburger {
-//     display: none;
-//     margin: 20px 22px 0 0;
-//     position: fixed;
-//     top: 0;
-//     right: 0;
-//   }
-  
-//   nav {
-//     border-radius: 5px 0 0 5px;
-//     display: none;
-//     padding: 10px;
-//     position: fixed;
-//     top: 40px;
-//     right: 0;
-//     width: 90px;
-//     background-color: white;
-//     opacity: 90%;
-//     z-index: 99;
-//   }
-
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 900px) {
     .navBarIcon {
         opacity: 1;
     }
@@ -121,20 +90,36 @@ nav i {
         display: block;
     }
     .navLinks {
-        margin: 0;
-        margin-top: 64px;
+        position: absolute;
+        margin: 2px .5%;
+        padding: 0;
+        height: 100%;
+        width: 99%;
+        top: 64px;
     }
     .navLinks li {
         margin-left: 0;
     }
     .navLink {
-        background-color: black;
-        border: none;
+        background: #ec008c;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #fc6767, #ec008c);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #fc6767, #ec008c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        border: 3px solid white;
         color: white;
         font-family: Courier New;
         font-size: 18px;
         font-weight: bold;
         padding: 5px 30px;
-        width: 280px;
+        width: 100%;
+    }
+    .navLink:hover {
+        border: 2px solid #ec008c;  /* fallback for old browsers */
+        border: 2px solid -webkit-linear-gradient(to left, #fc6767, #ec008c);  /* Chrome 10-25, Safari 5.1-6 */
+        border: 2px solid linear-gradient(to left, #fc6767, #ec008c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: white;
+        color: c.$grey-bg;
+        margin-left: .5%;
+        margin-right: .5%;
+        width: 99%;
     }
 }
