@@ -4,7 +4,7 @@ import Projects from './components/Projects';
 import SvgLine from './components/SvgLine';
 import Nav from './components/Nav';
 import PageTitle from './components/PageTitle';
-// import Skills from './components/Skills';
+import Skills from './components/Skills';
 import {
   BrowserRouter as Router,
   Switch,
@@ -34,11 +34,11 @@ function App() {
           <Switch>
             <Route path="/work">
               <Nav timeOfDay={time} active={1} navIconActive={navIconActive ? "active" : ""} />
-              <PageTitle title='Skills'/>
-              {/* <Skills /> */}
+              <PageTitle title='Skills' tagline="(0-10)"/>
+              <Skills />
               <PageTitle title='Featured'/>
               <Projects />
-              <PageTitle title='Code Pens'/>
+              {/* <PageTitle title='Code Pens'/> */}
             </Route>
             <Route path="/svg">
               <SvgLine />

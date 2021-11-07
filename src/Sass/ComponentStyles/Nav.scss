@@ -63,10 +63,9 @@ nav i {
 }
 
 .navLink:hover {
-    background: #ec008c;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #fc6767, #ec008c);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #fc6767, #ec008c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: white;
     border: 1px solid white;
+    color: c.$grey-bg;
 }
 
 .navLinkactive {
@@ -91,35 +90,33 @@ nav i {
     }
     .navLinks {
         position: absolute;
-        margin: 2px .5%;
+        margin: 4px 5%;
         padding: 0;
         height: 100%;
-        width: 99%;
+        width: 90%;
         top: 64px;
     }
     .navLinks li {
+        background: white;
         margin-left: 0;
     }
     .navLink {
-        background: #ec008c;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to left, #fc6767, #ec008c);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to left, #fc6767, #ec008c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        border: 3px solid white;
+        background: c.$grey-bg;
+        // border: 3px solid white;
         color: white;
         font-family: Courier New;
         font-size: 18px;
         font-weight: bold;
+        margin-bottom: 4px;
         padding: 5px 30px;
         width: 100%;
     }
     .navLink:hover {
-        border: 2px solid #ec008c;  /* fallback for old browsers */
-        border: 2px solid -webkit-linear-gradient(to left, #fc6767, #ec008c);  /* Chrome 10-25, Safari 5.1-6 */
-        border: 2px solid linear-gradient(to left, #fc6767, #ec008c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        border: 2px solid c.$grey-bg;
+        // border: 2px solid #ec008c;  /* fallback for old browsers */
+        // border: 2px solid -webkit-linear-gradient(to left, #fc6767, #ec008c);  /* Chrome 10-25, Safari 5.1-6 */
+        // border: 2px solid linear-gradient(to left, #fc6767, #ec008c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         background: white;
         color: c.$grey-bg;
-        margin-left: .5%;
-        margin-right: .5%;
-        width: 99%;
     }
 }

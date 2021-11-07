@@ -15,19 +15,27 @@ function Nav(props) {
 
     function goHome() {
         history.push('/');
-        toggleNavBar();
+        if (window.innerWidth <= 900) {
+            toggleNavBar();
+        }
     }
     function goWork() {
         history.push('/work');
-        toggleNavBar();
+        if (window.innerWidth <= 900) {
+            toggleNavBar();
+        }
     }
     function goAbout() {
         history.push('/about');
-        toggleNavBar();
+        if (window.innerWidth <= 900) {
+            toggleNavBar();
+        }
     }
     function goMake() {
         history.push('/together');
-        toggleNavBar();
+        if (window.innerWidth <= 900) {
+            toggleNavBar();
+        }
     }
 
     function initNavBar() {

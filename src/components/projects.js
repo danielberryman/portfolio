@@ -15,11 +15,11 @@ function Projects() {
         },
         { 
           title: "Beltbook", 
-          tagline: "Catelog Your Musical Theatre Repertoire",
+          tagline: "Catalog Musical Theatre Rep",
           description: `Are you a performer? Or a musical theatre lover? Check out The Beltbook! You can create
             endless books of music categorized in whatever way you want. Search by Voice Type, Character Type, Era and more! 
             `,
-          tech: "React & Django/Python deployed via Docker on Digital Ocean",
+          tech: "React, Django/Python, Docker",
           bg: "beltbookBg"
         }
     ];
