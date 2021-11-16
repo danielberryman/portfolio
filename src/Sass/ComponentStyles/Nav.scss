@@ -1,122 +1,144 @@
 @use '../colors' as c;
 
-nav {
-    height: 64px;
-}
+// All screen sizes
 
+nav { 
+    height: 64px; 
+
+    // fadein
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1s; /* Firefox < 16 */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera < 12.1 */
+    animation: fadein 1s;
+}
+.nav-day { background: rgba(74,74,74,1); }
+.nav-night { }
 .navLogo {
     border-radius: 50%;
     filter: drop-shadow(0 2px 3px rgb(37, 37, 37));
     margin: 7px 0 7px 5%;
     width: 50px;
 }
-
 nav i {
-    transform: rotate(90deg);
     color: white;
     font-size: 32px;
 }
-
-.navBarIcon {
+#upIcon { transform: rotate(0deg); }
+#downIcon { display: none; }
+.navBarIcon { 
     position: absolute;
     height: 32px;
     width: 28px;
     top: 16px;
     right: 5%;
-    opacity: 0;   
-}
-
-#upIcon {
-    transform: rotate(0deg);
-    
-}
-#downIcon {
-    transform: rotate(0deg);
-    display: none;
-}
-
-.turnDown {
-    transform: rotate(-90deg);
-}
-
-.navLinks, .navLinks li {
-    display: inline;
+    opacity: 1; 
 }
 
 .navLinks {
-    margin: 14.5px 5% 14.5px 0;
-    float: right;
+    position: absolute;
+    margin: 4px 5%;
+    padding: 0;
+    width: 90%;
+    top: 64px;
 }
-
 .navLinks li {
-    margin-left: 50px;
+    background: white;
+    display: block;
+    margin-left: 0;
 }
-
 .navLink {
-    background-color: c.$grey-bg;
-    border: 1px solid c.$grey-bg;
+    background: c.$grey-bg;
+    border: none;
     color: white;
     font-family: Courier New;
     font-size: 18px;
     font-weight: bold;
+    margin-bottom: 4px;
     padding: 5px 30px;
+    width: 100%;
+    transform: rotateX(90deg);
+    transform-origin: top;
+    // animation: name duration timing-function delay iteration-count direction fill-mode;
 }
 
+#navLink1 { 
+    animation: turnover .15s ease-out;
+    animation-fill-mode: forwards; 
+}
+#navLink2 { 
+    animation: turnover .15s ease-out .15s;
+    animation-fill-mode: forwards; 
+}
+#navLink3 { 
+    animation: turnover .15s ease-out .30s;
+    animation-fill-mode: forwards; 
+}
+
+@keyframes turnover {
+    to {
+        transform: rotateX(0deg);
+    }
+}
+
+// .navClose {
+//     transform: rotateX(0deg);
+//     transform-origin: top;
+//     animation: navclose .15s ease-out .30s;
+//     animation-fill-mode: forwards; 
+// }
+
+// @keyframes navclose {
+//     to {
+//         transform: rotateX(90deg);
+//     }
+// }
+
 .navLink:hover {
+    border: 2px solid c.$grey-bg;
     background: white;
-    border: 1px solid white;
     color: c.$grey-bg;
 }
 
-.navLinkactive {
-    border-bottom: 1px solid white;
-}
-
-.nav-day {
-    background: rgba(74,74,74,1);
-    // background: linear-gradient(90deg, rgba(28,28,28,1) 0%, rgba(74,74,74,1) 100%);
-}
-
-.nav-night {
-
-}
-
-@media screen and (max-width: 900px) {
-    .navBarIcon {
-        opacity: 1;
-    }
-    .navLinks, .navLinks li {
-        display: block;
-    }
+@media screen and (min-width: 900px) {
+    .navBarIcon {  display: none; }
     .navLinks {
-        position: absolute;
-        margin: 4px 5%;
+        display: inline;
+        margin: 0;
         padding: 0;
-        height: 100%;
-        width: 90%;
-        top: 64px;
+        top: 16px;
+        right: 5%;
+        width: initial;
     }
     .navLinks li {
-        background: white;
-        margin-left: 0;
+        display: inline;
+        top: 0;
+        margin-left: 20px;
     }
+
     .navLink {
-        background: c.$grey-bg;
-        // border: 3px solid white;
+        background-color: c.$grey-bg;
+        border: 1px solid white;
         color: white;
-        font-family: Courier New;
-        font-size: 18px;
-        font-weight: bold;
-        margin-bottom: 4px;
-        padding: 5px 30px;
-        width: 100%;
+        margin: 0;
+        width: 200px;
+        animation: none;
+        transform: none;
     }
+
+    #navLink1, #navLink2, #navLink3 { 
+        animation: none;
+        animation-fill-mode: none; 
+    }
+
     .navLink:hover {
-        border: 2px solid c.$grey-bg;
-        // border: 2px solid #ec008c;  /* fallback for old browsers */
-        // border: 2px solid -webkit-linear-gradient(to left, #fc6767, #ec008c);  /* Chrome 10-25, Safari 5.1-6 */
-        // border: 2px solid linear-gradient(to left, #fc6767, #ec008c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         background: white;
+        border: 1px solid c.$grey-bg;
         color: c.$grey-bg;
+    }
+
+    .navLinkactive {
+        border-left: none;
+        border-right: none;
     }
 }

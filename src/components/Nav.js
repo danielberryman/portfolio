@@ -46,17 +46,22 @@ function Nav(props) {
 
     function toggleNavBar() {
         let navLinks = document.getElementById('navLinks');
+        // let navLink1 = document.getElementById('navLink1');
+        // let navLink2 = document.getElementById('navLink2');
+        // let navLink3 = document.getElementById('navLink3');
         let upIcon = document.getElementById('upIcon');
         let downIcon = document.getElementById('downIcon');
         if (upIcon.style.display === 'none') {
             downIcon.style.display = 'none';
             upIcon.style.display = 'block';
+            // navLink1.classList.add("navClose");
+            // navLink2.classList.add("navClose");
+            // navLink3.classList.add("navClose");
             navLinks.classList.add("hidden");
         } else {
             upIcon.style.display = 'none';
             downIcon.style.display = 'block';
             navLinks.classList.remove("hidden");
-
         }
     }
       
@@ -91,9 +96,9 @@ function Nav(props) {
                 <i id="downIcon" className="fas fa-angle-down"></i>
             </div>
             <ul id="navLinks" className="navLinks">
-                <li><button className={props.active === 1 ? 'navLink navLinkactive': 'navLink'} onClick={goWork}>My Work</button></li>
-                <li><button className={props.active === 2 ? 'navLink navLinkactive': 'navLink'} onClick={goAbout}>About Me</button></li>
-                <li><button className={props.active === 3 ? 'navLink navLinkactive': 'navLink'} onClick={goMake}>Get Started</button></li>
+                <li key="navLink1"><button id="navLink1" className={props.active === 1 ? 'navLink navLinkactive': 'navLink'} onClick={goWork}>My Work</button></li>
+                <li key="navLink2"><button id="navLink2" className={props.active === 2 ? 'navLink navLinkactive': 'navLink'} onClick={goAbout}>About Me</button></li>
+                <li key="navLink3"><button id="navLink3" className={props.active === 3 ? 'navLink navLinkactive': 'navLink'} onClick={goMake}>Get Started</button></li>
             </ul>
         </nav>
     )

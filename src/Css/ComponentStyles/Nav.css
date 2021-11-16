@@ -1,5 +1,18 @@
 nav {
   height: 64px;
+  -webkit-animation: fadein 1s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 1s;
+  /* Internet Explorer */
+  -o-animation: fadein 1s;
+  /* Opera < 12.1 */
+  animation: fadein 1s;
+}
+
+.nav-day {
+  background: #4a4a4a;
 }
 
 .navLogo {
@@ -10,9 +23,16 @@ nav {
 }
 
 nav i {
-  transform: rotate(90deg);
   color: white;
   font-size: 32px;
+}
+
+#upIcon {
+  transform: rotate(0deg);
+}
+
+#downIcon {
+  display: none;
 }
 
 .navBarIcon {
@@ -21,96 +41,106 @@ nav i {
   width: 28px;
   top: 16px;
   right: 5%;
-  opacity: 0;
-}
-
-#upIcon {
-  transform: rotate(0deg);
-}
-
-#downIcon {
-  transform: rotate(0deg);
-  display: none;
-}
-
-.turnDown {
-  transform: rotate(-90deg);
-}
-
-.navLinks, .navLinks li {
-  display: inline;
+  opacity: 1;
 }
 
 .navLinks {
-  margin: 14.5px 5% 14.5px 0;
-  float: right;
+  position: absolute;
+  margin: 4px 5%;
+  padding: 0;
+  width: 90%;
+  top: 64px;
 }
 
 .navLinks li {
-  margin-left: 50px;
+  background: white;
+  display: block;
+  margin-left: 0;
 }
 
 .navLink {
-  background-color: #4a4a4a;
-  border: 1px solid #4a4a4a;
+  background: #4a4a4a;
+  border: none;
   color: white;
   font-family: Courier New;
   font-size: 18px;
   font-weight: bold;
+  margin-bottom: 4px;
   padding: 5px 30px;
+  width: 100%;
+  transform: rotateX(90deg);
+  transform-origin: top;
 }
 
+#navLink1 {
+  animation: turnover 0.15s ease-out;
+  animation-fill-mode: forwards;
+}
+
+#navLink2 {
+  animation: turnover 0.15s ease-out 0.15s;
+  animation-fill-mode: forwards;
+}
+
+#navLink3 {
+  animation: turnover 0.15s ease-out 0.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes turnover {
+  to {
+    transform: rotateX(0deg);
+  }
+}
 .navLink:hover {
+  border: 2px solid #4a4a4a;
   background: white;
-  border: 1px solid white;
   color: #4a4a4a;
 }
 
-.navLinkactive {
-  border-bottom: 1px solid white;
-}
-
-.nav-day {
-  background: #4a4a4a;
-}
-
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 900px) {
   .navBarIcon {
-    opacity: 1;
-  }
-
-  .navLinks, .navLinks li {
-    display: block;
+    display: none;
   }
 
   .navLinks {
-    position: absolute;
-    margin: 4px 5%;
+    display: inline;
+    margin: 0;
     padding: 0;
-    height: 100%;
-    width: 90%;
-    top: 64px;
+    top: 16px;
+    right: 5%;
+    width: initial;
   }
 
   .navLinks li {
-    background: white;
-    margin-left: 0;
+    display: inline;
+    top: 0;
+    margin-left: 20px;
   }
 
   .navLink {
-    background: #4a4a4a;
+    background-color: #4a4a4a;
+    border: 1px solid white;
     color: white;
-    font-family: Courier New;
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 4px;
-    padding: 5px 30px;
-    width: 100%;
+    margin: 0;
+    width: 200px;
+    animation: none;
+    transform: none;
+  }
+
+  #navLink1, #navLink2, #navLink3 {
+    animation: none;
+    animation-fill-mode: none;
   }
 
   .navLink:hover {
-    border: 2px solid #4a4a4a;
     background: white;
+    border: 1px solid #4a4a4a;
     color: #4a4a4a;
+  }
+
+  .navLinkactive {
+    border-left: none;
+    border-right: none;
   }
 }

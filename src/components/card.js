@@ -4,6 +4,7 @@ import '../Css/ComponentStyles/Card.css';
 function Card(props) {
     return (
         <div className={`cardContainer ${props.cardBg}`}>
+            <a href={props.link} target="_blank" rel="noreferrer">
             <div className="card">
                 <h2>{props.title}</h2>
             </div>
@@ -13,6 +14,7 @@ function Card(props) {
                 <p className="cardOverlayContent cardOverlayDesc">{props.desc}</p>
                 <p className="cardOverlayContent cardOverlayTech">{props.tech}</p>
             </div>
+            </a>
         </div>
     )
 }

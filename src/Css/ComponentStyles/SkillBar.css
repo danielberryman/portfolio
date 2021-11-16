@@ -16,4 +16,11 @@
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   height: 10px;
   margin: 5px 0 10px 0;
+  animation: animate 2s ease-out 1;
+}
+
+@keyframes animate {
+  from {
+    width: 15%;
+  }
 }

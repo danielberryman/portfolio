@@ -1,10 +1,13 @@
 import './App.scss';
 import Welcome from './components/Welcome';
-import Projects from './components/Projects';
+import { FeaturedProjects, Projects } from './common/constants/Projects';
+import FeaturedProject from './components/FeaturedProject';
+import Project from './components/Project';
 import SvgLine from './components/SvgLine';
 import Nav from './components/Nav';
 import PageTitle from './components/PageTitle';
 import Skills from './components/Skills';
+import Pens from './components/Pens';
 import {
   BrowserRouter as Router,
   Switch,
@@ -30,34 +33,43 @@ function App() {
   return (
     <div>
       <Router>
-        <div>
-          <Switch>
-            <Route path="/work">
-              <Nav timeOfDay={time} active={1} navIconActive={navIconActive ? "active" : ""} />
+        <Switch>
+          <Route path="/work">
+            <Nav timeOfDay={time} active={1} navIconActive={navIconActive ? "active" : ""} />
+            <div className="pageContainer">
               <PageTitle title='Skills' tagline="(0-10)"/>
               <Skills />
               <PageTitle title='Featured'/>
-              <Projects />
-              {/* <PageTitle title='Code Pens'/> */}
-            </Route>
-            <Route path="/svg">
-              <SvgLine />
-            </Route>
-            <Route path="/about">
-              <Nav timeOfDay={time} active={2} />
+              { FeaturedProjects.map((project) => {
+                return <FeaturedProject project={project} />
+              })}
+              <PageTitle title='Other Projects'/>
+              { Projects.map((project) => {
+                <Project project={project} />
+              })}
+              <PageTitle title='Code Pens'/>
+              <Pens />
+            </div>
+          </Route>
+          <Route path="/svg">
+            <SvgLine />
+          </Route>
+          <Route path="/about">
+            <Nav timeOfDay={time} active={2} />
+            <div className="pageContainer">
               <PageTitle title='About Me'/>
-              {/* <SvgLine /> */}
-            </Route>
-            <Route path="/together">
-              <Nav timeOfDay={time} active={3} />
+            </div>
+          </Route>
+          <Route path="/together">
+            <Nav timeOfDay={time} active={3} />
+            <div className="pageContainer">
               <PageTitle title="Let's Make Something!"/>
-              {/* <SvgLine /> */}
-            </Route>
-            <Route path="/">
-              <Welcome timeOfDay={time} />
-            </Route>
-          </Switch>
-        </div>
+            </div>
+          </Route>
+          <Route path="/">
+            <Welcome timeOfDay={time} />
+          </Route>
+        </Switch>
       </Router>
     </div>
   );
