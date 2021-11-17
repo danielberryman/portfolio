@@ -1,0 +1,25 @@
+@use '../colors' as c;
+
+.secondaryProject {
+  margin: 10px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 100%);
+  row-gap: 20px;
+}
+      
+    // @media screen and (max-width: 285px) { }
+    // @media screen and (max-width: 330px) { }
+    // @media screen and (min-width: 445px) { }
+    // @media screen and (min-width: 600px) { }
+    // @media screen and (min-width: 720px) { }
+    // @media screen and (min-width: 900px) { }
+    
+@media screen and (min-width: 1024px) {
+  .secondaryProject { 
+    grid-template-columns: repeat(auto-fill, 47.5%);
+    // grid-auto-rows: 200px;
+    column-gap: 5%;
+    row-gap: 4%;
+  }
+}
+

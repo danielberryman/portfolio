@@ -1,8 +1,9 @@
 import './App.scss';
 import Welcome from './components/Welcome';
-import { FeaturedProjects, Projects } from './common/constants/Projects';
+import { fProjects, sProjects } from './common/constants/Projects';
 import FeaturedProject from './components/FeaturedProject';
-import Project from './components/Project';
+import SecondaryProject from './components/SecondaryProject';
+import ProjectContainer from './components/ProjectContainer';
 import SvgLine from './components/SvgLine';
 import Nav from './components/Nav';
 import PageTitle from './components/PageTitle';
@@ -40,13 +41,18 @@ function App() {
               <PageTitle title='Skills' tagline="(0-10)"/>
               <Skills />
               <PageTitle title='Featured'/>
-              { FeaturedProjects.map((project) => {
+              { fProjects.map((project) => {
                 return <FeaturedProject project={project} />
               })}
               <PageTitle title='Other Projects'/>
-              { Projects.map((project) => {
-                <Project project={project} />
-              })}
+              <ProjectContainer type="secondary">
+                { sProjects.map((p) => {
+                  return <SecondaryProject title={p.title}
+                                           description={p.description}
+                                           tech={p.tech} 
+                                           link={p.link}/>
+                })}
+              </ProjectContainer>
               <PageTitle title='Code Pens'/>
               <Pens />
             </div>

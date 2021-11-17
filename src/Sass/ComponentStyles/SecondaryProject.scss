@@ -1,4 +1,4 @@
-.secondaryProject {
+.secondaryProjects {
   margin: 10px 0;
   display: grid;
   grid-template-columns: repeat(auto-fill, 100%);
@@ -6,7 +6,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .secondaryProject {
+  .secondaryProject { 
     grid-template-columns: repeat(auto-fill, 47.5%);
     column-gap: 5%;
     row-gap: 4%;

@@ -1,4 +1,4 @@
-.secondaryProject {
+.secondaryProjects {
   margin: 10px 0;
   display: grid;
   grid-template-columns: repeat(auto-fill, 100%);
