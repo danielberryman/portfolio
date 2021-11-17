@@ -1,11 +1,11 @@
 .welcome-container {
   position: absolute;
-  height: 250px;
-  width: 250px;
+  height: 300px;
+  width: 300px;
   top: 50%;
   left: 50%;
-  margin-top: -125px;
-  margin-left: -125px;
+  margin-top: -150px;
+  margin-left: -150px;
   transition: height 0.2s, width 0.2s, margin-top 0.2s, margin-left 0.2s, opacity 0.2s;
   border: none;
   -webkit-animation: fadein 2s;
@@ -64,23 +64,25 @@
   }
 }
 .welcome-container:hover {
-  height: 270px;
-  width: 270px;
-  margin-top: -135px;
-  margin-left: -135px;
+  height: 330px;
+  width: 330px;
+  margin-top: -165px;
+  margin-left: -165px;
 }
 
 .mouseDown:hover {
-  height: 290px;
-  width: 290px;
-  margin-top: -145px;
-  margin-left: -145px;
+  height: 350px;
+  width: 350px;
+  margin-top: -175px;
+  margin-left: -175px;
 }
 
 .child {
   position: absolute;
-  height: 100%;
-  width: 100%;
+  height: 70%;
+  width: 70%;
+  margin-top: 15%;
+  margin-left: 15%;
 }
 
 .circle {
