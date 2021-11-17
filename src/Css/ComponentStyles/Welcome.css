@@ -103,10 +103,6 @@
   transition: opacity 0.2s;
 }
 
-.img:hover {
-  opacity: 75%;
-}
-
 .day {
   filter: drop-shadow(0 10px 20px #525252);
 }

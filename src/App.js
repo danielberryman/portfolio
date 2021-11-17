@@ -17,15 +17,15 @@ import {
 } from "react-router-dom";
 
 function App() {
-  const date = new Date();
+  // const date = new Date();
   let time = "day";
   // eslint-disable-next-line no-unused-vars
-  if (date.getHours() >= 24) {
-    document.body.style.backgroundColor = "rgb(75, 75, 75)";
-    time = "night";
-  } else {
-    document.body.style.backgroundColor = "white";
-  }
+  // if (date.getHours() >= 24) {
+  //   document.body.style.backgroundColor = "rgb(75, 75, 75)";
+  //   time = "night";
+  // } else {
+  document.body.style.backgroundColor = "white";
+  // }
 
   let navIconActive = false;
   if (window.screen.width > 1100) {
