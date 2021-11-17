@@ -1,14 +1,1 @@
-.secondaryProject {
-  margin: 10px 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 100%);
-  row-gap: 20px;
-}
 
-@media screen and (min-width: 1024px) {
-  .secondaryProject {
-    grid-template-columns: repeat(auto-fill, 47.5%);
-    column-gap: 5%;
-    row-gap: 4%;
-  }
-}

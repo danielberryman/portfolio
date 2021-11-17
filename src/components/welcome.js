@@ -5,7 +5,7 @@ import { useHistory } from 'react-router-dom';
 
 function Welcome(props) {
     const history = useHistory();
-    const opacity = props.timeOfDay === 'day' ? 'dayO' : 'nightO'; 
+    const opacity = props.timeOfDay === 'day' ? 'dayO' : 'dayO'; 
 
     function handleMouseDown() {
         document.getElementById("welcome").classList.add('mouseDown');

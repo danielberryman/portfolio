@@ -1,15 +1,18 @@
 .cardContainer {
   position: relative;
   height: 250px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 0;
   width: 100%;
 }
 
-.card {
-  padding: 51.5px 5%;
+.card, .cardOverlay {
+  height: 200px;
+  padding: 25px 7%;
   position: absolute;
-  width: 90%;
+  width: 86%;
+}
+
+.card {
   opacity: 1;
 }
 
@@ -17,21 +20,31 @@
   opacity: 0;
 }
 
-.cardContainer .card h2 {
+.card h2 {
   color: white;
-  text-align: center;
+  margin: 0;
   text-transform: uppercase;
-  font-size: 130px;
-  margin: 0 auto;
-  width: 80%;
+  width: 100%;
+}
+
+.secondaryProjectCardCont h2 {
+  font-size: 24px;
+}
+
+.featuredProjectCardCont h2 {
+  font-size: 42px;
 }
 
 .cardOverlay {
   opacity: 0;
-  padding: 25px 5% 15px 5%;
-  height: 210px;
-  position: absolute;
-  width: 90%;
+}
+
+.cardOverlay h2 {
+  color: white;
+  font-size: 28px;
+  margin: 84.5px 0;
+  text-align: center;
+  text-decoration: underline;
 }
 
 .cardOverlay:hover {
@@ -41,7 +54,6 @@
 
 .cardOverlayContent {
   color: white;
-  margin: 0 5% 20px 5%;
 }
 
 .cardOverlayTitle {
@@ -50,8 +62,21 @@
 }
 
 .cardOverlayTagline {
-  font-size: 18px;
-  margin-top: 0;
+  font-size: 22px;
+  margin: 0;
+}
+
+.cardOverlayTech {
+  position: absolute;
+  bottom: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.secondaryProjectCardCont .cardOverlayTech {
+  bottom: 25px;
 }
 
 .cardOverlayDesc {
@@ -59,134 +84,29 @@
   margin-top: 0;
 }
 
-.cardOverlayTech {
-  font-size: 16px;
-  font-weight: bold;
-  margin-top: 0;
-}
-
 .jsDatesBg {
-  background: #3CA55C;
+  background: #56ab2f;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #B5AC49, #3CA55C);
+  background: -webkit-linear-gradient(to right, #a8e063, #56ab2f);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #B5AC49, #3CA55C);
+  background: linear-gradient(to right, #a8e063, #56ab2f);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .beltbookBg {
   background: #DA22FF;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #9733EE, #DA22FF);
+  background: -webkit-linear-gradient(to left, #9733EE, #DA22FF);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #9733EE, #DA22FF);
+  background: linear-gradient(to left, #9733EE, #DA22FF);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-@media (max-width: 1024px) {
-  .cardContainer {
-    height: 200px;
-  }
-
-  .card {
-    padding: 47.5px 5%;
-  }
-
-  .cardContainer .card h2 {
-    font-size: 92px;
-  }
-
-  .cardOverlay {
-    padding: 42px 5% 38px 5%;
-    height: 120px;
-  }
-
-  .cardOverlayTitle {
-    font-size: 38px;
-  }
-
-  .cardOverlayTagline {
-    font-size: 22px;
-  }
-
-  .cardOverlayDesc {
-    display: none;
-  }
-
-  .cardOverlayTech {
-    font-size: 14px;
-  }
-}
-@media (max-width: 720px) {
-  .cardContainer {
-    height: 180px;
-  }
-
-  .card {
-    padding: 54px 5%;
-  }
-
-  .cardContainer .card h2 {
-    font-size: 64px;
-  }
-
-  .cardOverlay {
-    padding: 42px 5% 38px 5%;
-    height: 100px;
-  }
-
-  .cardOverlayTitle {
-    font-size: 32px;
-  }
-
-  .cardOverlayTagline {
-    font-size: 18px;
-  }
-
-  .cardOverlayDesc {
-    display: none;
-  }
-
-  .cardOverlayTech {
-    font-size: 14px;
-  }
-}
-@media (max-width: 500px) {
-  .cardContainer {
-    height: 100px;
-  }
-
-  .card {
-    padding: 29.5px 5%;
-  }
-
-  .cardContainer .card h2 {
-    font-size: 36px;
-  }
-
-  .cardOverlay {
-    padding: 17px 5% 3px 5%;
-    height: 80px;
-    margin-top: 0;
-  }
-
-  .cardOverlayContent {
-    margin: 0 5% 5px 5%;
-  }
-
-  .cardOverlayTitle {
-    font-size: 18px;
-  }
-
-  .cardOverlayTagline {
-    font-size: 14px;
-  }
-
-  .cardOverlayDesc {
-    display: none;
-  }
-
-  .cardOverlayTech {
-    font-size: 12px;
-  }
+.secondaryBg {
+  background: #0052D4;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #0052D4, #658cf7);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #0052D4, #658cf7);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }

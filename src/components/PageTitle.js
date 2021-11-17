@@ -3,7 +3,7 @@ import '../Css/ComponentStyles/PageTitle.css';
 function PageTitle(props) {
     return (
         <div>
-            <h1>{props.title}</h1>
+            <h2>{props.title}</h2>
             { props.tagline &&
                 <p>{props.tagline}</p>
             }

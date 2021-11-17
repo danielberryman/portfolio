@@ -97,8 +97,8 @@ function Nav(props) {
             </div>
             <ul id="navLinks" className="navLinks">
                 <li key="navLink1"><button id="navLink1" className={props.active === 1 ? 'navLink navLinkactive': 'navLink'} onClick={goWork}>My Work</button></li>
-                <li key="navLink2"><button id="navLink2" className={props.active === 2 ? 'navLink navLinkactive': 'navLink'} onClick={goAbout}>About Me</button></li>
-                <li key="navLink3"><button id="navLink3" className={props.active === 3 ? 'navLink navLinkactive': 'navLink'} onClick={goMake}>Get Started</button></li>
+                {/* <li key="navLink2"><button id="navLink2" className={props.active === 2 ? 'navLink navLinkactive': 'navLink'} onClick={goAbout}>About Me</button></li> */}
+                {/* <li key="navLink3"><button id="navLink3" className={props.active === 3 ? 'navLink navLinkactive': 'navLink'} onClick={goMake}>Get Started</button></li> */}
             </ul>
         </nav>
     )

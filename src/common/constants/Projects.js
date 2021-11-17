@@ -1,5 +1,4 @@
-// Featured
-export const fProjects = [
+export const FeaturedProjects = [
     { 
         title: "JS Dates",
         tagline: "JavaScript Dates Practice",
@@ -9,7 +8,8 @@ export const fProjects = [
             Instructions specify local versus utc time.`,
         tech: "HTML, CSS, & JavaScript",
         bg: "jsDatesBg",
-        link: "https://danielberryman.github.io/jsdates/"
+        link: "https://danielberryman.github.io/jsdates/",
+        image: "js-dates.png"
     },
     { 
         title: "Beltbook", 
@@ -19,23 +19,24 @@ export const fProjects = [
             `,
         tech: "React, Django/Python, Docker",
         bg: "beltbookBg",
-        link: "https://thebeltbook.com"
+        link: "https://thebeltbook.com",
+        image: "beltbook.png"
         }
 ];
 
-// Secondary
-export const sProjects = [
+export const SecondaryProjects = [
     {
         title: "Tic Tac Toe",
         description: "Weekend fun building a little tic tac toe game.",
         tech: "HTML, CSS, & JS",
-        link: "https://danielberryman.github.io/tic-tac-toe/"
+        link: "https://danielberryman.github.io/tic-tac-toe/",
+        bg: "secondaryBg"
     },
     {
-        title: "Notes & Tutorials",
-        description: `I realized taking copious notes was useless. This is my attempt to track what 
-            I'm learning and leave it behind for my future self. I'm welcome. I plan to move this to a Gatsby site.`,
+        title: "Notes & Tuts",
+        description: `Notes for quick execution across wide range of tech.`,
         tech: "Markdown",
-        link: "https://danielberryman.github.io/tic-tac-toe/"
+        link: "https://github.com/danielberryman/blog-posts-and-tutorials",
+        bg: "secondaryBg"
     }
 ];
