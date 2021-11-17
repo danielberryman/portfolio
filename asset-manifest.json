@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/portfolio-take-2/static/css/main.e499521d.chunk.css",
+    "main.js": "/portfolio-take-2/static/js/main.7ba0df20.chunk.js",
+    "main.js.map": "/portfolio-take-2/static/js/main.7ba0df20.chunk.js.map",
+    "runtime-main.js": "/portfolio-take-2/static/js/runtime-main.e167a063.js",
+    "runtime-main.js.map": "/portfolio-take-2/static/js/runtime-main.e167a063.js.map",
+    "static/js/2.949e9be0.chunk.js": "/portfolio-take-2/static/js/2.949e9be0.chunk.js",
+    "static/js/2.949e9be0.chunk.js.map": "/portfolio-take-2/static/js/2.949e9be0.chunk.js.map",
+    "static/js/3.9fc72fe2.chunk.js": "/portfolio-take-2/static/js/3.9fc72fe2.chunk.js",
+    "static/js/3.9fc72fe2.chunk.js.map": "/portfolio-take-2/static/js/3.9fc72fe2.chunk.js.map",
+    "index.html": "/portfolio-take-2/index.html",
+    "static/css/main.e499521d.chunk.css.map": "/portfolio-take-2/static/css/main.e499521d.chunk.css.map",
+    "static/js/2.949e9be0.chunk.js.LICENSE.txt": "/portfolio-take-2/static/js/2.949e9be0.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/portfolio-take-2/static/media/4chan.29af72a7.svg",
+    "static/media/line.861163e3.svg": "/portfolio-take-2/static/media/line.861163e3.svg",
+    "static/media/test2.202771fc.png": "/portfolio-take-2/static/media/test2.202771fc.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e167a063.js",
+    "static/js/2.949e9be0.chunk.js",
+    "static/css/main.e499521d.chunk.css",
+    "static/js/main.7ba0df20.chunk.js"
+  ]
+}
