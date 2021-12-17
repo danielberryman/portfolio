@@ -26,6 +26,20 @@ export const FeaturedProjects = [
 
 export const SecondaryProjects = [
     {
+        title: "Daniel's Cards",
+        description: "Splash Page for App Idea.",
+        tech: "React",
+        link: "https://danielberryman.github.io/daniels-cards/",
+        bg: "danielsCardsBg"
+    },
+    {
+        title: "Ng Mat GroupBy",
+        description: "Example of doing GroupBy with Ng Material Table.",
+        tech: "Angular",
+        link: "https://danielberryman.github.io/angular-mat-groupby/",
+        bg: "secondaryBgLightBlue"
+    },
+    {
         title: "Tic Tac Toe",
         description: "Weekend fun building a little tic tac toe game.",
         tech: "HTML, CSS, & JS",
@@ -37,6 +51,6 @@ export const SecondaryProjects = [
         description: `Notes for quick execution across wide range of tech.`,
         tech: "Markdown",
         link: "https://github.com/danielberryman/blog-posts-and-tutorials",
-        bg: "secondaryBg"
+        bg: "secondaryBgLightBlue"
     }
 ];

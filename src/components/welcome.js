@@ -15,10 +15,10 @@ function Welcome(props) {
         let el = document.getElementById("welcome")
         el.classList.remove('mouseDown');
         const css = `.welcome-container:hover {
-            height: 250px;
-            width: 250px;
-            margin-top: -125px;
-            margin-left: -125px;
+            height: 280px;
+            width: 280px;
+            margin-top: -140px;
+            margin-left: -140px;
         }`;
         const style = document.createElement('style');
         if (style.styleSheet) {
